@@ -88,7 +88,7 @@ Configured in `.github/workflows/ci.yml`
 ## 👤 Author
 
 **Miskir B.**  
-Nova DS Fellowship Cohort – Week 5  
+KAIM – Week 5  
 [GitHub Profile](https://github.com/MiskirB)
 
 ---
