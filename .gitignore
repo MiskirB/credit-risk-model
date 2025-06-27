@@ -199,3 +199,4 @@ __pycache__/
 *.pkl
 .env
 mlruns/
+venv/
