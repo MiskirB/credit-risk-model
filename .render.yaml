@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: credit-risk-api
+    env: docker
+    region: oregon # or use 'frankfurt' for EU
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: MLFLOW_TRACKING_URI
+        value: file:/app/mlruns # or your remote URI if applicable
+    buildCommand: ""
+    startCommand: uvicorn src.api.main:app --host 0.0.0.0 --port 8000
