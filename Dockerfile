@@ -10,6 +10,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy your application code into the container
 COPY src/ ./src/
+COPY model/ ./model/
+
 
 # Run the FastAPI app with Uvicorn
 # CMD ["uvicorn", "src.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
