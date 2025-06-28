@@ -15,5 +15,6 @@ COPY model/ ./model/
 
 # Run the FastAPI app with Uvicorn
 # CMD ["uvicorn", "src.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+# new
 CMD ["uvicorn", "src.api.main_render:app", "--host", "0.0.0.0", "--port", "8000"]
 
