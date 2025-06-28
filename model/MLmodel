@@ -1,0 +1,49 @@
+artifact_path: /Users/jerus/Desktop/KAIM/credit-risk-model/mlruns/672617163943053260/models/m-4217ea8f2eba47fb969ea5d9b2c3c76b/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.13.2
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.7.0
+is_signature_from_type_hint: false
+mlflow_version: 3.1.1
+model_id: m-4217ea8f2eba47fb969ea5d9b2c3c76b
+model_size_bytes: 1871
+model_uuid: m-4217ea8f2eba47fb969ea5d9b2c3c76b
+prompts: null
+run_id: 16b7c8c2e57747b0838eb8202a0748f7
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: values
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": 0, "required": true}, {"type": "double", "name":
+    1, "required": true}, {"type": "double", "name": 2, "required": true}, {"type":
+    "double", "name": 3, "required": true}, {"type": "double", "name": 4, "required":
+    true}, {"type": "double", "name": 5, "required": true}, {"type": "double", "name":
+    6, "required": true}, {"type": "double", "name": 7, "required": true}, {"type":
+    "double", "name": 8, "required": true}, {"type": "double", "name": 9, "required":
+    true}, {"type": "double", "name": 10, "required": true}, {"type": "double", "name":
+    11, "required": true}, {"type": "double", "name": 12, "required": true}, {"type":
+    "double", "name": 13, "required": true}, {"type": "double", "name": 14, "required":
+    true}, {"type": "double", "name": 15, "required": true}, {"type": "double", "name":
+    16, "required": true}, {"type": "double", "name": 17, "required": true}, {"type":
+    "double", "name": 18, "required": true}, {"type": "double", "name": 19, "required":
+    true}, {"type": "double", "name": 20, "required": true}, {"type": "double", "name":
+    21, "required": true}, {"type": "double", "name": 22, "required": true}, {"type":
+    "double", "name": 23, "required": true}, {"type": "double", "name": 24, "required":
+    true}, {"type": "double", "name": 25, "required": true}, {"type": "double", "name":
+    26, "required": true}, {"type": "double", "name": 27, "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2025-06-28 20:30:51.582596'
