@@ -196,7 +196,6 @@ data/
 __pycache__/
 .ipynb_checkpoints/
 *.pyc
-*.pkl
 .env
 mlruns/
 venv/
