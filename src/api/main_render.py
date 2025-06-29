@@ -6,7 +6,9 @@ import mlflow.pyfunc
 app = FastAPI()
 
 model = mlflow.pyfunc.load_model("model")
-
+@app.get("/")
+def root():
+    return {"message": "✅ Welcome to the Credit Risk Prediction API!"}
 
 @app.post("/predict", response_model=RiskPrediction)
 def predict_risk(customer: CustomerInput):
