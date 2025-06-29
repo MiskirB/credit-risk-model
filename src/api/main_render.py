@@ -1,13 +1,12 @@
 from fastapi import FastAPI
-
-
 from src.api.pydantic_models import CustomerInput, RiskPrediction
 import mlflow.pyfunc
 
+
 app = FastAPI()
 
-# Load model from local folder (for Render)
 model = mlflow.pyfunc.load_model("model")
+
 
 @app.post("/predict", response_model=RiskPrediction)
 def predict_risk(customer: CustomerInput):
